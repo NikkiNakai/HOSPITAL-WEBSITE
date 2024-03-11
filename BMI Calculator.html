@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>BMI CALCULATOR</title>
+        <meta charset="windows-1252">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <script>
+            function calc() {
+                var n1 = parseInt(document.getElementById('n1').value);
+                var n2 = parseInt(document.getElementById('n2').value);
+                var heightInM = n1/100
+                BMI = n2/(heightInM*heightInM);
+                
+                if (BMI<=18.5 && BMI>0) {
+                    document.getElementById('result').value = "You are Underweight";
+                }
+                
+               else if (BMI<=24.9 && BMI>18.5) {
+                    document.getElementById('result').value = "You are Normal";
+                }
+                
+               else if (BMI<=29.9 && BMI>24.9) {
+                    document.getElementById('result').value = " You are Overweight";
+                }
+               else if (BMI>=30 ) {
+                    document.getElementById('result').value = "Obese";
+                }
+               else if (BMI<=39.9  && BMI>30) {
+                    document.getElementById('result').value = "Obese Class 2";
+                }
+              else  if (BMI>=40 ) {
+                    document.getElementById('result').value = "Obese Class 3";
+                }
+               
+               
+            }
+</script>
+<title>BMI Calculator</title>
+    </head>
+    <body>
+<table style="background-color: blue">
+<th>
+<img src="C:\Users\Nakai\Desktop\BML Care Hospital Folder\hospital logo 1.jpg" width="300px" height="300px"/></th>
+<th><h1 style="background-color:blue;font-size:141px; color:white;Display:Inline">BML Care Hospital            </h1></th><p>
+</table>
+<b>
+<i style="color:blue;background-color:blue">jczsndbcbdsbcudbchhdnnujdiieieeusjhdeduudhducuudhedh</i><a href="C:\Users\Nakai\Desktop\BML Care Hospital Folder\Login.html"style="color:white;background-color:blue ;font-size:20px">Register/Login</a><i style="color:blue;background-color:blue">uudhsjnsducuhzdujusdudhedh</i><a href="C:\Users\Nakai\Desktop\BML Care Hospital Folder\BMLCareHospital.html" style="color:white;background-color:blue;font-size:20px">BML Care Hompage</a><i style="color:blue;background-color:blue">uudhszjsninsisisiducuudhedh</i><a href="C:\Users\Nakai\Desktop\BML Care Hospital Folder\Services.html" style="color:white;background-color:blue;font-size:20px" >Services</a><i style="color:blue;background-color:blue">uudhducuujdjsidunhdudhdnnsjnnsujdeheesuhedh</i></b>   
+        <div>
+<center>
+<p>
+<table border="1px" width="400px" height="350px" >
+<th style="background-color:blue;color:white;font-size:25px">BMI CALCULATOR</th>
+<tr>
+        <td><br><label for age ><b>Age :</b></label>
+        <input type="number" id="age" min="1" max="100"style="width:400px"/>
+  </div>
+        <div>
+        <label><b><br>Gender : </label><b style="color:white">bhbhybjhb</b>
+<input type="radio" name="Gender" value="Male"/>
+        <label>Male</label><b style="color:white">bhbhybjhb</b>
+<input type="radio" name="Gender" value="Female"/>
+        <label>Female</label></b>
+        </div>
+        
+    
+
+        <br><b><label for="n1">Enter Height in Centimeters : </label></b>
+        <input type="number" id="n1" min="1" max="500"style="width:280px"/><br/>
+        <b><br><label for="n2">Enter Weight in Kg : </label></b>
+        <input type="number" id="n2" min="1" max="500"style="width:340px"/><br/><br/>
+        <br>
+    <b><button onclick="calc();" style="background-color:blue;font-size:25px;color:white;width:500px;height:60px">BMI =</button></b>
+        <br/><br><b><textarea id="result" rows="4" cols="65"></textarea></b></td></tr>
+</table>
+<h1 style="background-color:blue;color:white">For More Information About BMI:</h1>
+<p><h2><li>Contact our resident Dietitian Dr. M. Mohammed at:</li> <p><i>+254677854412 / +254753555616</h2>
+<p><h2>mmNutrition@bmlc.or.ke</i></h2>
+<h1 style="background-color:blue;color:white">Give Us Feedback:</h1>
+<form>
+<b style="font-size:30px"><i>Comments:</i><p><b><textarea cols="60px" rows="10px"></textarea><p>
+<input type="submit">
+</form>
+<p>
+<img src="C:\Users\Nakai\Desktop\BML Care Hospital Folder\hospital logo 2.jpg" width="1500px">
+</center>
+    </body>
+</html>
